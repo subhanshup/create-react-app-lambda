@@ -147,4 +147,7 @@ a:hover{
   .space{
     padding: 0px;
   }
+  .imagebox-title{
+    font-size: 22px;
+  }
 }
