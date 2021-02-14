@@ -4,7 +4,7 @@ import Heading from '../modules/heading'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-export default function ImageBox({title="",href={},image="",srcSet="",className=""}){
+export default function ImageBox({title="",href={},image="",srcSet="",className="", placeholder,height="auto"}){
     return(
         <div className={"imagebox-container " + className}>
             {image &&
@@ -13,6 +13,8 @@ export default function ImageBox({title="",href={},image="",srcSet="",className=
                  srcSet={srcSet}
                  effect="blur"
                  alt={title}
+                 height={height}
+                 placeholder={placeholder}
                 />
             }
             <div className="imagebox-desc">

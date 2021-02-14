@@ -32,6 +32,8 @@ class Home extends Component {
                                     image="./static/yoga/yoga.jpg"
                                     srcSet={"./static/yoga/yoga@2x.jpg 2x, ./static/yoga/yoga@3x.jpg 3x"}
                                     className="yoga"
+                                    id="yoga"
+                                    placeholder={<Placeholder/>}
                                 />
                             </Col>
                             <Col sm={4}>
@@ -43,25 +45,31 @@ class Home extends Component {
                                             image="./static/meditation/meditation.jpg"
                                             srcSet={"./static/meditation/meditation@2x.jpg 2x, ./static/meditation/meditation@3x.jpg 3x"}
                                             className="meditation"
+                                            id="meditation"
+                                            placeholder={<Placeholder/>}
                                         />
                                     </Col>
                                     <Col sm={12} className="space"/>
-                                    <Col sm={6}>
+                                    <Col xs={6} sm={6}>
                                         <ImageBox 
                                             title="Nutrition" 
                                             href={{ title : "Know More" , link : "/"}} 
                                             image="./static/nutrition/nutrition.png"
                                             srcSet={"./static/nutrition/nutrition@2x.png 2x, ./static/nutrition/nutrition@3x.png 3x"}
                                             className="nutrition"
+                                            id="nutrition"
+                                            placeholder={<Placeholder/>}
                                         />
                                     </Col>
-                                    <Col sm={6}>
+                                    <Col xs={6} sm={6}>
                                         <ImageBox 
                                             title="Therapy" 
                                             href={{ title : "Know More" , link : "/"}} 
                                             image="./static/therapy/therapy.png"
                                             srcSet={"./static/therapy/therapy@2x.png 2x, ./static/therapy/therapy@3x.png 3x"}
                                             className="therapy"
+                                            id="therapy"
+                                            placeholder={<Placeholder/>}
                                         />
                                     </Col>
                                 </Row>
@@ -74,5 +82,10 @@ class Home extends Component {
   }
 }
 
+function Placeholder({height}){
+    return(<span style={{ height : "300px" , backgroundColor : "#fff" }}/>)
+}
 
 export default Home
+
+
