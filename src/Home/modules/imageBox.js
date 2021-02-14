@@ -2,6 +2,7 @@
 import React from "react"
 import Heading from '../modules/heading'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function ImageBox({title="",href={},image="",srcSet="",className=""}){
     return(
@@ -9,7 +10,8 @@ export default function ImageBox({title="",href={},image="",srcSet="",className=
             {image &&
                 <LazyLoadImage
                  src={image} 
-                 srcSet={srcSet} 
+                 srcSet={srcSet}
+                 effect="blur"
                  alt={title}
                 />
             }
