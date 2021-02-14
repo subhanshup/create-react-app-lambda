@@ -4,16 +4,15 @@ import Heading from '../modules/heading'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-export default function ImageBox({title="",href={},image="",srcSet="",className="", placeholder,height="auto"}){
+export default function ImageBox({title="",href={},image="",srcSet="",className="", placeholder , minHeight}){
     return(
-        <div className={"imagebox-container " + className}>
+        <div className={"imagebox-container " + className} style={{ minHeight : minHeight}}>
             {image &&
                 <LazyLoadImage
                  src={image} 
                  srcSet={srcSet}
                  effect="blur"
                  alt={title}
-                 height={height}
                  placeholder={placeholder}
                 />
             }

@@ -33,6 +33,7 @@ class Home extends Component {
                                     srcSet={"./static/yoga/yoga@2x.jpg 2x, ./static/yoga/yoga@3x.jpg 3x"}
                                     className="yoga"
                                     id="yoga"
+                                    minHeight="390px"
                                     placeholder={<Placeholder/>}
                                 />
                             </Col>
@@ -46,6 +47,7 @@ class Home extends Component {
                                             srcSet={"./static/meditation/meditation@2x.jpg 2x, ./static/meditation/meditation@3x.jpg 3x"}
                                             className="meditation"
                                             id="meditation"
+                                            minHeight="177px"
                                             placeholder={<Placeholder/>}
                                         />
                                     </Col>
@@ -58,6 +60,7 @@ class Home extends Component {
                                             srcSet={"./static/nutrition/nutrition@2x.png 2x, ./static/nutrition/nutrition@3x.png 3x"}
                                             className="nutrition"
                                             id="nutrition"
+                                            minHeight="211px"
                                             placeholder={<Placeholder/>}
                                         />
                                     </Col>
@@ -69,6 +72,7 @@ class Home extends Component {
                                             srcSet={"./static/therapy/therapy@2x.png 2x, ./static/therapy/therapy@3x.png 3x"}
                                             className="therapy"
                                             id="therapy"
+                                            minHeight="211px"
                                             placeholder={<Placeholder/>}
                                         />
                                     </Col>
@@ -82,8 +86,8 @@ class Home extends Component {
   }
 }
 
-function Placeholder({height}){
-    return(<span style={{ height : "300px" , backgroundColor : "#fff" }}/>)
+function Placeholder(){
+    return(<div className="loader"/>)
 }
 
 export default Home
