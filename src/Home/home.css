@@ -1,0 +1,139 @@
+body{
+    margin : 0px !important;
+    padding: 0px !important;
+    background: linear-gradient(to right, #B06AB3, #5d5cca);
+  }
+
+.logo{
+
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.heading{
+  margin: 115px 90px 16px 0;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ebc481;
+}
+
+
+.sub-heading{
+  margin: 16px 90px 115.7px 0;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  
+}
+
+.align-item-center{
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.space{
+  padding: 5px;
+}
+
+.imagebox-container{
+  position: relative;
+}
+
+.imagebox-desc{
+  position: absolute;
+  bottom: 0px;
+  z-index: 9;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top, rgb(0 0 0 / 100%), rgba(255, 255, 255, 0));
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.imagebox-title{
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ebc481;
+  /* margin-bottom: 0px; */
+}
+
+.imagebox-a{
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  border-radius: 34.8px;
+  background-color: #8c7bd1;
+  padding: 8px 24px;
+  text-decoration: none !important;
+}
+
+a:hover{
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+
+@media only screen and (max-width: 600px){
+  section{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block !important;
+  }
+  .heading{
+    margin: 50px 0px;
+    text-align: center;
+  }
+  .sub-heading{
+    margin: 50px 0px;
+    text-align: justify;
+  }
+  .imagebox-container{
+    margin-bottom: 20px;
+  }
+  .space{
+    padding: 0px;
+  }
+}
