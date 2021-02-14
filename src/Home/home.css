@@ -2,10 +2,6 @@ body{
     margin : 0px !important;
     padding: 0px !important;
     background: linear-gradient(to right, #B06AB3, #5d5cca);
-  }
-
-.logo{
-
 }
 
 section{
@@ -90,7 +86,6 @@ section img{
   letter-spacing: normal;
   text-align: left;
   color: #ebc481;
-  /* margin-bottom: 0px; */
 }
 
 .imagebox-a{
@@ -114,6 +109,7 @@ a:hover{
 }
 
 
+/* Mobile Device CSS */
 @media only screen and (max-width: 600px){
   section{
     width: 100%;

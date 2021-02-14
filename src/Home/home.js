@@ -19,15 +19,18 @@ class Home extends Component {
                     <Container>
                         <Row className="align-item-center">
                             <Col xs={12} sm={5}>
+                                {/* Reusable Custom Component to render any text safely */}
+                                {/* Have Seprated Constants for i18 purposes. */}
                                 <Heading tag="h1" className="heading" content={headingContent}/>
                                 <Heading tag="h2" className="sub-heading" content={subHeadingContent}/>
                             </Col>
                             <Col sm={3}>
+                                {/* Image card box custom component. */}
                                 <ImageBox 
                                     title="Yoga" 
                                     href={{ title : "Know More" , link : "/"}} 
                                     image="./static/yoga/yoga.jpg"
-                                    srcSet={[]}
+                                    srcSet={"./static/yoga/yoga@2x.jpg 2x, ./static/yoga/yoga@3x.jpg 3x"}
                                     className="yoga"
                                 />
                             </Col>
@@ -38,7 +41,7 @@ class Home extends Component {
                                             title="Meditation" 
                                             href={{ title : "Know More" , link : "/"}} 
                                             image="./static/meditation/meditation.jpg"
-                                            srcSet={[]}
+                                            srcSet={"./static/meditation/meditation@2x.jpg 2x, ./static/meditation/meditation@3x.jpg 3x"}
                                             className="meditation"
                                         />
                                     </Col>
@@ -48,7 +51,7 @@ class Home extends Component {
                                             title="Nutrition" 
                                             href={{ title : "Know More" , link : "/"}} 
                                             image="./static/nutrition/nutrition.png"
-                                            srcSet={[]}
+                                            srcSet={"./static/nutrition/nutrition@2x.png 2x, ./static/nutrition/nutrition@3x.png 3x"}
                                             className="nutrition"
                                         />
                                     </Col>
@@ -57,7 +60,7 @@ class Home extends Component {
                                             title="Therapy" 
                                             href={{ title : "Know More" , link : "/"}} 
                                             image="./static/therapy/therapy.png"
-                                            srcSet={[]}
+                                            srcSet={"./static/therapy/therapy@2x.png 2x, ./static/therapy/therapy@3x.png 3x"}
                                             className="therapy"
                                         />
                                     </Col>
