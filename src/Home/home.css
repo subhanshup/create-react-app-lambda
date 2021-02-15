@@ -58,6 +58,7 @@ section img{
 
 .imagebox-container{
   position: relative;
+  text-align: center;
 }
 
 .imagebox-desc{
