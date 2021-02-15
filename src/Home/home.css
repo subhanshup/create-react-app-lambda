@@ -61,6 +61,10 @@ section img{
   text-align: center;
 }
 
+.lazy-load-image-background{
+  width: 100%;
+}
+
 .imagebox-desc{
   position: absolute;
   bottom: 0px;

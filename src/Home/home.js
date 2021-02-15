@@ -24,7 +24,7 @@ class Home extends Component {
                                 <Heading tag="h1" className="heading" content={headingContent}/>
                                 <Heading tag="h2" className="sub-heading" content={subHeadingContent}/>
                             </Col>
-                            <Col sm={3}>
+                            <Col xs={12} sm={3}>
                                 {/* Image card box custom component. */}
                                 <ImageBox 
                                     title="Yoga" 
